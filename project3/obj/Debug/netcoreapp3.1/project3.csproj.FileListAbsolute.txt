@@ -1,0 +1,12 @@
+C:\Users\16232\source\repos\Project-Euler\project3\obj\Debug\netcoreapp3.1\project3.AssemblyInfoInputs.cache
+C:\Users\16232\source\repos\Project-Euler\project3\obj\Debug\netcoreapp3.1\project3.AssemblyInfo.cs
+C:\Users\16232\source\repos\Project-Euler\project3\obj\Debug\netcoreapp3.1\project3.csproj.CoreCompileInputs.cache
+C:\Users\16232\source\repos\Project-Euler\project3\bin\Debug\netcoreapp3.1\project3.exe
+C:\Users\16232\source\repos\Project-Euler\project3\bin\Debug\netcoreapp3.1\project3.deps.json
+C:\Users\16232\source\repos\Project-Euler\project3\bin\Debug\netcoreapp3.1\project3.runtimeconfig.json
+C:\Users\16232\source\repos\Project-Euler\project3\bin\Debug\netcoreapp3.1\project3.runtimeconfig.dev.json
+C:\Users\16232\source\repos\Project-Euler\project3\bin\Debug\netcoreapp3.1\project3.dll
+C:\Users\16232\source\repos\Project-Euler\project3\bin\Debug\netcoreapp3.1\project3.pdb
+C:\Users\16232\source\repos\Project-Euler\project3\obj\Debug\netcoreapp3.1\project3.dll
+C:\Users\16232\source\repos\Project-Euler\project3\obj\Debug\netcoreapp3.1\project3.pdb
+C:\Users\16232\source\repos\Project-Euler\project3\obj\Debug\netcoreapp3.1\project3.genruntimeconfig.cache
