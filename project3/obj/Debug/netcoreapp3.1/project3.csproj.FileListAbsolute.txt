@@ -10,3 +10,4 @@ C:\Users\16232\source\repos\Project-Euler\project3\bin\Debug\netcoreapp3.1\proje
 C:\Users\16232\source\repos\Project-Euler\project3\obj\Debug\netcoreapp3.1\project3.dll
 C:\Users\16232\source\repos\Project-Euler\project3\obj\Debug\netcoreapp3.1\project3.pdb
 C:\Users\16232\source\repos\Project-Euler\project3\obj\Debug\netcoreapp3.1\project3.genruntimeconfig.cache
+C:\Users\16232\source\repos\Project-Euler\project3\obj\Debug\netcoreapp3.1\project3.csprojAssemblyReference.cache
