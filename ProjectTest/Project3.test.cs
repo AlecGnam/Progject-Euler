@@ -25,7 +25,7 @@ namespace Project3
             Project_Eulers.Project3 uut = new Project_Eulers.Project3();
             Assert.IsFalse(uut.IsPrime(20));
         }
-        
+
         [Test]
         public void TestEulerExample()
         {
@@ -38,6 +38,14 @@ namespace Project3
             Assert.Contains(13,factors); 
             Assert.Contains(29,factors);
 
+        }
+        [Test, Timeout(100000)]
+        public void TestEulerFinal()
+        {
+
+            Project_Eulers.Project3 uut = new Project_Eulers.Project3();
+            var factors = uut.factors(600851475143);
+            Assert.AreEqual(6857, factors[factors.Count - 1]);
         }
     }
 }
