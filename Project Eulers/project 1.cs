@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Project_Eulers
 {
-    class project1
+    public class project1
     {
-        static void Main()
+        public void Main()
         {
             int BigNumber = 0;
             int SecondNumber = 0;

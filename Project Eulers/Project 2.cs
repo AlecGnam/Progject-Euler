@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Project_Eulers
 {
-    class Project_2
+    public class Project_2
     {
-        static void Main()
+        public void Main()
         {
             int Number1 = 1;
             int Number2 = 2;
