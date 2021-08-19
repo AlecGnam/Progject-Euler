@@ -1,14 +1,41 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace Project4
 {
-    class Program
+    public class Program
     {
+        public bool IsPalidrome(int Number)
+        {
+            bool Palidromic = true;
+            StringBuilder Test = new StringBuilder();
+            int TestNumber = 0;
+            foreach(var digit in Number.ToString())
+            {
+                Test.Append(digit);
+            }
+            while (Test.Length != 0)
+            {
+                TestNumber = Test.Length;
+                TestNumber--;
+                            
+                if (Test[0] == Test[TestNumber])
+                {
+                    TestNumber--;
+                    Test.Remove(0,1);
+                    Test.Remove(TestNumber, 1);
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            return Palidromic;
+        }
         static void Main(string[] args)
         {
-            List<int> ForwardNumber = new List<int>();
-            Stack<int> ReverseNumber = new Stack<int>();
+            Program p = new Program();
             int Number = 0;
             int a = 0;
             int multiple1 = 999;
@@ -16,16 +43,8 @@ namespace Project4
             for (var i = 0; a < 2 || i < 1; i++)
             {
                 Number = multiple1 * multiple2;
-                foreach(var digit in Number.ToString())
-                {
-                    ReverseNumber.Push(digit);
-                    ForwardNumber.Add(digit);
-                }
-                if (ForwardNumber.ToString() == ReverseNumber.ToString())
-                {
-                    i = 1;
-                }
-                else
+
+                if (p.IsPalidrome(Number))
                 {
                     if(multiple1 == 0 || multiple2 == 0)
                     {
@@ -46,8 +65,7 @@ namespace Project4
                         multiple2--;
                         multiple1--;
                     }
-                    ForwardNumber.Clear();
-                    ReverseNumber.Clear();
+                    
                 }
             }
             Console.WriteLine(Number);
