@@ -33,42 +33,46 @@ namespace Project4
             }
             return Palidromic;
         }
+        public bool IsPrime(int number)
+        {
+            if (number == 1) // 1 - not a prime number
+                return false;
+            if (number != 2 && number % 2 == 0)
+                return true;
+            for (int d = 3; d * d <= number; d += 2)
+            {
+                if (number % d == 0)
+                    return true;
+            }
+            return false;
+        }
         static void Main(string[] args)
         {
             Program p = new Program();
             int Number = 0;
-            int a = 0;
             int multiple1 = 999;
             int multiple2 = 999;
-            for (var i = 0; a < 2 || i < 1; i++)
+            Number = multiple1 * multiple2;
+            for (var i = 0; i < 1;)
             {
-                Number = multiple1 * multiple2;
-
-                if (p.IsPalidrome(Number))
+                if (!p.IsPalidrome(Number))
                 {
-                    if(multiple1 == 0 || multiple2 == 0)
+                    Number--;
+                }
+                else if (Number < 100 * 100)
+                {
+                    i++;
+                }
+                else
+                {
+                    if (!p.IsPrime(Number))
                     {
-                        multiple1 = 999;
-                        multiple2 = 999;
-                        a++;
-                    }
-                    if (a == 0)
-                    {
-                        multiple1--;
-                    }
-                    else if(a == 1)
-                    {
-                        multiple2--;
-                    }
-                    else
-                    {
-                        multiple2--;
-                        multiple1--;
-                    }
-                    
+                        Console.WriteLine(Number);
+                        i++;
+                    } 
                 }
             }
-            Console.WriteLine(Number);
+            
             
         }
     }
