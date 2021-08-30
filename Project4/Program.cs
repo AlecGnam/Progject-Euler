@@ -17,9 +17,13 @@ namespace Project4
             }
             while (Test.Length != 0)
             {
+                if(Test.Length == 1)
+                {
+                    return Palidromic;
+                }
                 TestNumber = Test.Length;
                 TestNumber--;
-                            
+                 
                 if (Test[0] == Test[TestNumber])
                 {
                     TestNumber--;
@@ -33,45 +37,29 @@ namespace Project4
             }
             return Palidromic;
         }
-        public bool IsPrime(int number)
-        {
-            if (number == 1) // 1 - not a prime number
-                return false;
-            if (number != 2 && number % 2 == 0)
-                return true;
-            for (int d = 3; d * d <= number; d += 2)
-            {
-                if (number % d == 0)
-                    return true;
-            }
-            return false;
-        }
         static void Main(string[] args)
         {
             Program p = new Program();
             int Number = 0;
-            int multiple1 = 999;
-            int multiple2 = 999;
-            Number = multiple1 * multiple2;
-            for (var i = 0; i < 1;)
+            int answer = 0;
+            
+            
+            for (var Multiply1 = 999; Multiply1 >= 100; Multiply1--)
             {
-                if (!p.IsPalidrome(Number))
+               for(var Multiply2 = Multiply1; Multiply2 >= 100; Multiply2--)
                 {
-                    Number--;
-                }
-                else if (Number < 100 * 100)
-                {
-                    i++;
-                }
-                else
-                {
-                    if (!p.IsPrime(Number))
+                  Number = Multiply1 * Multiply2;
+                    if (p.IsPalidrome(Number))
                     {
-                        Console.WriteLine(Number);
-                        i++;
-                    } 
+                        if(Number > answer)
+                        {
+                            answer = Number;
+                        }
+                       
+                    }
                 }
             }
+            Console.WriteLine(answer);
             
             
         }
