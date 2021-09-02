@@ -39,29 +39,33 @@ namespace Project4
         }
         static void Main(string[] args)
         {
-            Program p = new Program();
-            int Number = 0;
+            Program p = new Program();           
+            int answer = GetNumber(p); ;
+            
+            Console.WriteLine(answer);
+
+
+        }
+
+        public static int GetNumber(Program p)
+        {
             int answer = 0;
-            
-            
+            int Number = 0;
             for (var Multiply1 = 999; Multiply1 >= 100; Multiply1--)
             {
-               for(var Multiply2 = Multiply1; Multiply2 >= 100; Multiply2--)
+                for (var Multiply2 = Multiply1; Multiply2 >= 100; Multiply2--)
                 {
-                  Number = Multiply1 * Multiply2;
+                    Number = Multiply1 * Multiply2;
                     if (p.IsPalidrome(Number))
                     {
                         if(Number > answer)
                         {
                             answer = Number;
                         }
-                       
                     }
                 }
             }
-            Console.WriteLine(answer);
-            
-            
+            return answer;
         }
     }
 }
